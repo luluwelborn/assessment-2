@@ -1,20 +1,9 @@
-setInterval(moveSquare, 20);
-var keys = {}
 
-$(document).keydown(function(e) {
-    keys[e.keyCode] = true;
-});
+//same as using document.getElementById('redSquare');
+var redSquare = $('#redSquare');
 
-$(document).keyup(function(e) {
-    delete keys[e.keyCode];
-});
+//same as using document.addEventListener('click', function red, true);
+$(document).click('#redSquare'); {
 
-function moveSquare() {
-    for (var direction in keys) {
-        if (!keys.hasOwnProperty(direction)) continue;
-        if (direction == 37) {
-            $("#redSquare").animate({left: "-=5"}, 0);                
-        }
+};
 
-    }
-}
