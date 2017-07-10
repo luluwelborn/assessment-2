@@ -1,11 +1,23 @@
-body {
-	margin: 30px;
-	height: 100%;
-	font-family: 'Lato', sans-serif;
-	background-image: url("assets/background-space.jpeg");
-	background-color: #222;
+/* MEDIA QUERY MAKES SWEET RESPONSIVE CHANGES */
+@media (max-width: 768px) {
+
+h1	{
+  font-size: 10px;
+  padding-top: 60px;
 }
 
+}
+
+/* THIS APPLIES TO ALL CONTENTS IN THE HTML DOC */
+
+body {
+  margin: auto;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+  /*Couldn't get local image link to work "assets/background-space.jpeg"*/
+  background-image: url("http://7bna.net/images/pictures-of-outer-space/pictures-of-outer-space-15.jpg");
+  background-color: #222;
+}
 
 #redSquare  {
   position: absolute;
@@ -13,6 +25,7 @@ body {
   height: 100px;
   background: red;
   margin: 40px;
+  outline: #fff solid thin;
 }
 
 #blueSquare  {
@@ -22,39 +35,60 @@ body {
   background-color: blue;
   margin: 40px;
   border-color: #fff;
+  outline: #fff solid thin;
 }
 
 h1	{
-	color: #fff;
-	font-weight: 400;
-	font-size: 60px;
-	text-transform: uppercase;
-	text-align: center;
-	padding-top: 150px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 160px;
 }
 
 p  {
-	color: #fff;
-	font-weight: 400;
-	font-size: 16px;
-	text-transform: none;
-	text-align: center;
-	padding-bottom: 25px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: none;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 a  {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .button	{
-	color: #fff;
-	font-weight: 900;
-	background-color: #1D2951;
-	height: 40px;
-	width: 200px;
-	text-transform: uppercase;
-	text-align: center;
-	margin: auto;
-	padding-top: 20px;
+  color: #fff;
+  font-weight: 900;
+  background-color: #1D2951;
+  height: 40px;
+  width: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.i  {
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #000; /* Green */
+  color: white;
+}
+
+.squareSmall  {
+  min-width: 80px;
+  min-height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  outline: #fff solid thin;
+  margin: auto;
+  width: 50%;
+  display: inline-block;
 }
