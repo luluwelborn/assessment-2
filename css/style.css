@@ -1,4 +1,4 @@
-/* MEDIA QUERY MAKES SWEET RESPONSIVE CHANGES */
+/* MEDIA QUERY - not working :( */
 @media (max-width: 768px) {
 
 h1	{
@@ -8,7 +8,7 @@ h1	{
 
 }
 
-/* THIS APPLIES TO ALL CONTENTS IN THE HTML DOC */
+/* Main Styles */
 
 body {
   margin: auto;
@@ -37,6 +37,8 @@ body {
   border-color: #fff;
   outline: #fff solid thin;
 }
+
+/* Element Styles */
 
 h1	{
   color: #fff;
@@ -73,15 +75,18 @@ a  {
   padding-top: 20px;
 }
 
+/* fontawesome icon */
 .i  {
   color: #fff;
 }
 
+/* Hovers are cool */
 .button:hover {
   background-color: #000; /* Green */
   color: white;
 }
 
+/* TODO for image and possible animation later */
 .squareSmall  {
   min-width: 80px;
   min-height: 80px;

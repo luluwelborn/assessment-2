@@ -2,9 +2,9 @@
 //define variables - same as using document.getElementById('redSquare');
 // var redSquare = $('#redSquare');
 // var blueSquare = $('#blueSquare');
-// var finishLine = $('finishLine');
 
-SOLUTION 3 - simple jQuery event moving 30px increments
+
+// SOLUTION 3 - simple jQuery event moving 30px increments
 $("html").keydown(function(event){
     if(event.which == "37") $("#redSquare").animate({"left" : "-=30px"}, { queue : false });
 
@@ -15,6 +15,8 @@ $("html").keydown(function(event){
     if(event.which == "40") $("#redSquare").animate({"top" : "+=30px"}, { queue : false });
 });
 
+
+// ............................................................
 
 /*  SOLUTION 2
     var keys = [];
@@ -54,6 +56,9 @@ function moveRedSquare () {
 	//keydown move value
 	right: '+ = 20px';
 };
+
+
+............................................................
 
 // SOLUTION 1 - .animate with button
 /*$(document).ready(function(){
