@@ -1,17 +1,60 @@
-body	{
+body {
 	margin: 30px;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	background-image: url("assets/background-space.jpeg");
+	background-color: #222;
 }
 
-.redSquare  {
+
+#redSquare  {
+  position: absolute;
   width: 100px;
   height: 100px;
-  background-color: red;
+  background: red;
   margin: 40px;
 }
 
-.blueSquare  {
+#blueSquare  {
+  position: absolute;
   width: 100px;
   height: 100px;
   background-color: blue;
   margin: 40px;
+  border-color: #fff;
+}
+
+h1	{
+	color: #fff;
+	font-weight: 400;
+	font-size: 60px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 150px;
+}
+
+p  {
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: none;
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+a  {
+	color: #fff;
+	text-decoration: none;
+}
+
+.button	{
+	color: #fff;
+	font-weight: 900;
+	background-color: #1D2951;
+	height: 40px;
+	width: 200px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: auto;
+	padding-top: 20px;
 }
