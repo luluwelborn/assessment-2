@@ -15,15 +15,21 @@ body {
   height: 100%;
   font-family: 'Lato', sans-serif;
   /*Couldn't get local image link to work "assets/background-space.jpeg"*/
-  background-image: url("http://7bna.net/images/pictures-of-outer-space/pictures-of-outer-space-15.jpg");
+  background-image: url("Desktop/wdi-work/assessment-2/assets/background-space.jpeg");
   background-color: #222;
 }
 
+.container  {
+  margin: 40px;
+}
+
 #redSquare  {
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 100px;
   background: red;
+  border-color: #fff;
+  outline: #fff solid thin;
 }
 
 #blueSquare  {
@@ -31,7 +37,6 @@ body {
   width: 100px;
   height: 100px;
   background-color: blue;
-  margin: 40px;
   border-color: #fff;
   outline: #fff solid thin;
 }
@@ -45,6 +50,14 @@ h1	{
   text-transform: uppercase;
   text-align: center;
   padding-top: 160px;
+}
+
+h2  {
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+  padding-top: 60px;
+  margin: 40px;
 }
 
 p  {
