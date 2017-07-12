@@ -2,23 +2,40 @@
 var redSquare = $("redSquare");
 var blueSquare = $("redSquare");
 
-$(document).ready(function() {
-  console.log("ready is working!");
+//boolean flag set at false Win 
 
+$(document).ready(function() {
+  // define a keycode number to move 1st object pixel length
   $(document).keydown(function(event){
     if(event.keyCode === 38) {
+        if($("#redSquare").css("left") >= "650px"){
+            window.alert("You won, Red!");
+        }
       console.log("keypressed up!");
        $("#redSquare").finish().animate({
             left: "+=50"
         });
     }
+    // define a keycode number to move 2nd object pixel length
     else if(event.keyCode === 40){
+        if($("#blueSquare").css("left") >= "650px"){
+            window.alert("You won, you're my boy, Blue!");
+        }
+        // use jQuery to get blue sq left value
       console.log("keypressed down");
-      $("#blueSquare").finish().animate({
-            left: "+=50"
+       $("#blueSquare").finish().animate({
+        left: "+=50"
         });
     }
   });
+  
+ /* var maxdistance = ();
+
+  function finishLine() {
+    if (redSquare === finishLine) {
+      window.alert("Game won. Please reset the game.");
+    }
+  } */
 });
     
 
