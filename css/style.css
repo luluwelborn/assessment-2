@@ -24,12 +24,10 @@ body {
   width: 100px;
   height: 100px;
   background: red;
-  margin: 40px;
-  outline: #fff solid thin;
 }
 
 #blueSquare  {
-  position: absolute;
+  position: relative;
   width: 100px;
   height: 100px;
   background-color: blue;
