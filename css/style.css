@@ -12,11 +12,15 @@ h1	{
 
 body {
   margin: auto;
-  height: 100%;
   font-family: 'Lato', sans-serif;
   /*Couldn't get local image link to work "assets/background-space.jpeg"*/
-  background-image: url("Desktop/wdi-work/assessment-2/assets/background-space.jpeg");
+  background-image: url("../images/background-space.jpeg");
   background-color: #222;
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container  {
